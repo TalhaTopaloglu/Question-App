@@ -1,0 +1,50 @@
+.question-area{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+  height: 700px;
+  margin: auto;
+  width: 60%;
+  border-radius: 10rem;
+  border-width: 3px;
+  box-shadow: 0 0 50px #0a8699;
+}
+
+.quiz-app-text {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 150px;
+  left: 7rem; 
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.quiz-app-letter {
+  color:#216a94;
+  text-shadow:10px 0 25px #3793c9;
+  animation: quiz-app-animation 5s infinite;
+}
+
+@keyframes quiz-app-animation{
+  0%,
+  100%{
+    text-shadow:-10px 10px 25px #3793c9;
+  }
+  25%{
+    text-shadow:-10px -10px 25px #3793c9;
+  }
+  50%{
+    text-shadow:10px -10px 25px #3793c9;
+  }
+  75%{
+    text-shadow: 10px 10px 25px #3793c9;
+  }
+}
+
+
+
+
+

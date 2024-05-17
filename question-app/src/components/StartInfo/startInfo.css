@@ -1,0 +1,76 @@
+.welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10rem;
+    padding: 2rem;
+    margin-top: 3rem;
+    height: 700px;
+    margin: auto;
+    width: 60%;
+    box-shadow: 0 0 50px #0a8699;
+}
+
+.welcome-message{
+    color: #0a8699;
+    font-size: 50px;
+    transition: 0.5s ease-in-out;
+    text-shadow: 0 0 20px #0a8699;
+    padding: 2rem;
+}
+
+.welcome-message:hover{
+    font-size: 55px;
+}
+
+.info-list{
+    background-color: transparent;
+    list-style-type: none;
+    width: 900px;
+    padding: 1rem;
+    text-align: center;
+}
+
+.info-list-item{
+    background-color: transparent;
+    color: #0a8699;
+    text-shadow: 0 0 20px #0a8699;
+    font-size: 18px;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    transition: 0.5s ease-in-out;
+    
+}
+
+.info-list-item:hover{
+    font-size: 21px;
+}
+
+.info-text{
+    color: #0a8699;
+    font-size: 40px;
+    transition: 0.5s ease-in-out;
+    text-shadow: 0 0 20px #0a8699;
+    margin-bottom: 2rem;
+}
+
+.info-text:hover{
+    font-size: 45px;
+}
+
+.start-button{
+    border: none;
+    font-size: 40px;
+    padding: 1rem 6rem;
+    background-color:#0a8699;
+    border-radius: 2rem;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 0 50px #0a8699;
+    transition: 0.5s ease-in-out;
+}
+
+.start-button:hover{
+    background-color: rgb(19, 3, 41);
+    box-shadow: 0 0 50px #0a8699;
+}

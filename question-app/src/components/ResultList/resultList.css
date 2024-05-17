@@ -1,0 +1,58 @@
+.results{
+    width: 60%;
+    margin:auto ;
+    padding: 4rem;
+    border-radius: 10rem;
+    box-shadow: 0 0 50px #0a8699;
+
+}
+.result-info{
+    margin: 100px 0 ;
+    text-align: center;
+}
+
+.result-info h1{
+    color: #0a8699;
+    font-size: 40px;
+    text-shadow: 0 0 20px #0a8699;
+    margin-bottom: 2rem;
+}
+
+.result-content *{
+    background-color: transparent;
+    color: white;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.result-content {
+    margin: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 3rem;
+    border-radius: 5rem;
+}
+
+.result-answers{
+    display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+
+.result-item{
+    margin-bottom: 0.6rem;
+}
+
+.try-again-button{
+    border: none;
+    font-size: 40px;
+    padding: 1rem 6rem;
+    background-color:#0a8699;
+    border-radius: 2rem;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 0 50px #0a8699;
+}
+
+
+

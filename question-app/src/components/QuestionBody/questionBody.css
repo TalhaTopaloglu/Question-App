@@ -1,0 +1,101 @@
+
+.question-body{
+    background-color: transparent;
+    align-items: center;
+    justify-content: center;
+}
+
+.body-top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    background-color: transparent;
+}
+
+.question-image{
+    height: 300px;
+    width: 400px;
+    object-fit:cover ;
+    border-radius: 2rem;
+    border: 3px solid #ffffff;
+}
+
+.quesiton-text{
+    margin-top: 2rem;
+    width: 700px;
+    font-size: 20px;
+    text-align: center;
+    padding: 1rem;
+    box-shadow: 0 0 50px #0e4565;
+    border-radius: 5rem;
+}
+
+.countdown{
+    position: absolute;
+    background-color:#0e4565;
+    border: 3px solid white ;
+    filter: drop-shadow(0 0 50px #0a8699);
+    font-size: 40px;
+    right:5rem ;
+    width: 150px ;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30% 70% 53% 47% / 26% 46% 54% 47%;
+    animation: countdown-animation 20s infinite;
+}
+
+@keyframes countdown-animation{
+    0%,
+    100%{
+        border-radius: 30% 70% 70% 30% / 30% 52% 48% 70%;
+    }
+
+    10% {
+        border-radius: 50% 50% 28% 88% / 25% 80% 20% 75%;
+    }
+    20%{
+        border-radius: 67% 33% 47% 53% / 37% 20% 80% 63%;
+    }
+    30% {
+        border-radius: 39% 61% 47% 53% / 37% 48% 60% 63%;
+    }
+    40% {
+        border-radius: 39% 61% 82% 18% / 74% 48% 68% 26%;
+    }
+    50% {
+        border-radius: 100%;
+    }
+    60% {
+        border-radius: 50% 50% 53% 47% / 72% 69% 31% 28%;
+    }
+    70% {
+        border-radius: 50% 50% 53% 47% / 26% 22% 78% 74%;
+    }
+    80% {
+        border-radius: 50% 50% 53% 47% / 26% 69% 31% 74%;
+    }
+    90%{
+        border-radius: 20% 80% 20% 80% / 28% 80% 20% 80%;
+    }
+}
+
+
+.countdown span {
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    filter: drop-shadow(0 10px 50px #ffffff);
+
+}
+
+/* 
+color1 {color: #0e4565;}
+.color2 {color: #0d5f7b;}
+.color3 {color: #0a8699;}
+.color4 {color: #07bebd;}
+.color5 {color: #03fedc;}
+
+
+*/
