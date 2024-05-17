@@ -79,7 +79,7 @@ function Questions() {
       // console.log(userResultList)
       const timer = setTimeout(() => {
         setIndex((prev) => prev + 1);
-      }, 10000); // 1 ekledim sil
+      }, 1000); // 1 ekledim sil
       return () => clearTimeout(timer);
     }
   }, [index]);
@@ -94,11 +94,12 @@ function Questions() {
         isTrue: isEquals(answer,userAnswer)
       }
     ])
+    setTrueQuestionNumber(trueCounter(userResultList));
   },[index])
 
-  useEffect(() => {
-    setTrueQuestionNumber(trueCounter(userResultList));
-  }, [userResultList]);
+  // useEffect(() => {
+    
+  // }, [userResultList]);
 
 
   useEffect(() => {

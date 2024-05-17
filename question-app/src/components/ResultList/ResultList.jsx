@@ -1,15 +1,14 @@
 /* eslint-disable react/prop-types */
 
-import {useState} from "react";
+import {useState,useEffect} from "react";
 import QuizAppText from "../QuizAppText/QuizAppText";
 import "./resultList.css";
 import App from "../../App";
 
 function ResultList({ trueQuestionNumber, userResultList }) {
   const [tryAgain, setIsTryAgain] = useState(false);
-  console.log(userResultList)
   userResultList.shift();
-
+  
   if (!tryAgain) {
     return (
       <div>
