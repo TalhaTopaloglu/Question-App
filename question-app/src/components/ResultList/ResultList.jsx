@@ -7,6 +7,7 @@ import App from "../../App";
 
 function ResultList({ trueQuestionNumber, userResultList }) {
   const [tryAgain, setIsTryAgain] = useState(false);
+  console.log(userResultList)
   userResultList.shift();
 
   if (!tryAgain) {

@@ -24,7 +24,7 @@ function Questions() {
   function trueCounter(arr){
     let counter = 0;
       arr.forEach((item) => {
-        if(item.isTrue){
+        if(item.isTrue && item.question){
           counter++;
         }
       })
@@ -94,8 +94,11 @@ function Questions() {
         isTrue: isEquals(answer,userAnswer)
       }
     ])
-    setTrueQuestionNumber(trueCounter(userResultList))
   },[index])
+
+  useEffect(() => {
+    setTrueQuestionNumber(trueCounter(userResultList));
+  }, [userResultList]);
 
 
   useEffect(() => {
@@ -103,6 +106,7 @@ function Questions() {
     if (counter === 0) clearInterval(timer);
     return () => clearInterval(timer);
   }, [counter]);
+
 
   if (!isQuizEnd) {
     return (
