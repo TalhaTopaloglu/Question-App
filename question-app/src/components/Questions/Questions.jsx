@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { useEffect, useState } from "react";
 import { data } from "../../questions";
 import "./question.css";
@@ -19,20 +20,16 @@ function Questions() {
   const [isQuizEnd, setIsQuizEnd] = useState(false);
   const [userAnswer, setUserAnswer] = useState("");
   const [isTrue, setIsTrue] = useState(false);
-  const [trueQuestionNumber, setTrueQuestionNumber] = useState(0);
+  const [isEmpty, setIsEmpty] = useState(true);
 
-  function trueCounter(arr){
-    let counter = 0;
-      arr.forEach((item) => {
-        if(item.isTrue && item.question){
-          counter++;
+
+  function emptyChecker(param1){
+        if(param1.length > 0){
+          return false;
+        }else {
+          return true;
         }
-      })
-      return counter;
   }
-
-  
-
   function optionToAnswer(option){
     option = option.split("");
     for(let i = 0; i < 3; i++){
@@ -49,7 +46,6 @@ function Questions() {
       return false
     }
   }
-
 
   const handleClickOption = (e) => {
     setTimeout(() => {
@@ -73,13 +69,11 @@ function Questions() {
       setUserAnswer("");
       setTimeout(() => {
         setOptionIsVisible(true);
-      }, 2000);
+      }, 10000);  
       setCounter(30);
-      // console.log(index)
-      // console.log(userResultList)
       const timer = setTimeout(() => {
         setIndex((prev) => prev + 1);
-      }, 1000); // 1 ekledim sil
+      }, 30000); 
       return () => clearTimeout(timer);
     }
   }, [index]);
@@ -91,15 +85,11 @@ function Questions() {
         question:question,
         userAnswer: userAnswer,
         answer:answer,
-        isTrue: isEquals(answer,userAnswer)
+        isTrue: isEquals(answer,userAnswer), 
+        isEmpty: emptyChecker(userAnswer)
       }
     ])
-    setTrueQuestionNumber(trueCounter(userResultList));
   },[index])
-
-  // useEffect(() => {
-    
-  // }, [userResultList]);
 
 
   useEffect(() => {
@@ -125,7 +115,7 @@ function Questions() {
       </>
     );
   } else {
-    return <ResultList userResultList={userResultList}  trueQuestionNumber={trueQuestionNumber}/>;
+    return <ResultList userResultList={userResultList} />; 
   }
 }
 

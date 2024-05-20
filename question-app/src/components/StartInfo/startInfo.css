@@ -12,16 +12,17 @@
 }
 
 .welcome-message{
+    background-color: transparent;
     color: #0a8699;
-    font-size: 50px;
+    font-size: 45px;
     transition: 0.5s ease-in-out;
     text-shadow: 0 0 20px #0a8699;
-    padding: 2rem;
+    padding: 1rem;
 }
 
-.welcome-message:hover{
-    font-size: 55px;
-}
+/* .welcome-message:hover{
+    font-size: 48px;
+} */
 
 .info-list{
     background-color: transparent;
@@ -42,9 +43,9 @@
     
 }
 
-.info-list-item:hover{
+/* .info-list-item:hover{
     font-size: 21px;
-}
+} */
 
 .info-text{
     color: #0a8699;
@@ -54,9 +55,9 @@
     margin-bottom: 2rem;
 }
 
-.info-text:hover{
+/* .info-text:hover{
     font-size: 45px;
-}
+} */
 
 .start-button{
     border: none;

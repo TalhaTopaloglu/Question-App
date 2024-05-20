@@ -6,7 +6,7 @@ import StartInfo from "./components/StartInfo/StartInfo";
 
 function App() {
   const [start, setStart] = useState(false);
-  const [text ,setText] = useState("Teste Başlamak Tıklanıyınız")
+  const [text ,setText] = useState("Teste Başlamak İçin Butona Tıklanıyınız")
   const [isVisible, setIsVisible] = useState(true);
 
   const handleClick = () => {
