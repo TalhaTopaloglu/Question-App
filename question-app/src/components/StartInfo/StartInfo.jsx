@@ -18,7 +18,7 @@ function StartInfo({ text, isVisible, handleClick }) {
         <li className="info-list-item">
           Testin sonucunu test bittikten sonra görebilirsiniz.
         </li>
-        <li className="info-list-item">Toplam süreniz: 6 dakikadır.</li>
+        <li className="info-list-item">Toplam süreniz: 5 dakikadır.</li>
         <li className="info-list-item">Başarılar..</li>
       </ul>
       <h1 className="info-text">{text}</h1>
