@@ -1,10 +1,19 @@
-# React + Vite
+# Question App
 
-Live: https://question-app-two.vercel.app/
+Live Link: https://question-app-two.vercel.app/
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Technologies Used 
+- React
+- JavaScript
+- Vite
+- CSS
+- HTML
 
-Currently, two official plugins are available:
+# Rules 
+- This test consists of 10 questions.
+- You have 30 seconds for each question.
+- The options will open 10 seconds after you see the question.
+- You can see the result of the test after the test is over.
+- Your total time 5 minutes.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
